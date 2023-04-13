@@ -14,24 +14,20 @@ namespace ScilyLines.Controleur
         SecteurDAO secteurDAO;
         PortDAO portDAO;
         LiaisonDAO liaisonDAO;
-        TraverseeDAO traverseDAO;
 
         private List<Secteur> listeSecteur;
         private List<Port> listePort;
         private List<Liaison> listeLiaison;
-        private List<Traversee> listeTraversee;
 
         public Manager(string provider, string database, string uid, string mdp)
         {
             portDAO = new PortDAO(provider, database, uid, mdp);
             secteurDAO = new SecteurDAO(provider, database, uid, mdp);
             liaisonDAO = new LiaisonDAO(provider, database, uid, mdp);
-            traverseDAO = new TraverseeDAO(provider, database, uid, mdp);
 
             listeSecteur = new List<Secteur>();
             listePort = new List<Port>();
             listeLiaison = new List<Liaison>();
-            listeTraversee = new List<Traversee();
         }
 
         public List<Secteur> chargementSecteur() { 

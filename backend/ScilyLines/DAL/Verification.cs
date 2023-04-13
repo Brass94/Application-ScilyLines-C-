@@ -38,6 +38,7 @@ namespace ScilyLines
         public static bool login(string unProvider, string uneDatabase, string unUid, string unMdp)
         {
             // Connexion en tant que root pour exécuter la requête
+            
             string connexionString = String.Format("Data Source={0};port=3306; Initial Catalog={1}; User Id=root;password=''", unProvider, uneDatabase);
             MySqlConnection mySqlCn = new MySqlConnection(connexionString);
             mySqlCn.Open();

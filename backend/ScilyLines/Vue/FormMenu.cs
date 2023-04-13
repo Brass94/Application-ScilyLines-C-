@@ -158,16 +158,5 @@ namespace ScilyLines
                 }
             }
         }
-
-        private void listBoxLiaison_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-
-        private void listBoxTraversee_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

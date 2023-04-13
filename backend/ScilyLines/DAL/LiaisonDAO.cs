@@ -86,14 +86,14 @@ namespace ScilyLines.DAL
             Ocom.Parameters.Add("id", MySqlDbType.Int32).Value = liaison.Id;
             Ocom.ExecuteNonQuery();
             maConnexionSql.closeConnection();
-        }
+        }   
         // Modifier une liaison
         public void updateLiaison(Liaison liaison, string duree)
         {
             maConnexionSql.openConnection();
             string req = "update liaison set duree=?duree where id=?id";
             Ocom = maConnexionSql.reqExec(req);
-            Ocom.Parameters.Add("duree", MySqlDbType.VarChar).Value = liaison.Duree;
+            Ocom.Parameters.Add("duree", MySqlDbType.Time).Value = liaison.Duree;
             Ocom.Parameters.Add("id", MySqlDbType.Int32).Value = liaison.Id;
             Ocom.ExecuteNonQuery();
             maConnexionSql.closeConnection();
