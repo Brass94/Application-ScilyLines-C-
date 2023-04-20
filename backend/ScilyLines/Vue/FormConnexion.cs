@@ -15,7 +15,7 @@ namespace ScilyLines
 {
     public partial class FormConnexion : Form
     {
-        const string DATABASE = "scilylines";
+        const string DATABASE = "scilylines2";
         const string PROVIDER = "localhost";
         public FormConnexion()
         {
